@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "population-usa-viz"
+name = "population-data-usa-viz"
 version = "0.1.0"
 description = "The puporse of this project is to create a streamlit dashboard on data population of USA"
 authors = ["auri99 <aurelleingrid832@gmail.com>"]

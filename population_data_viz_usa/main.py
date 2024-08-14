@@ -1,3 +1,5 @@
+import os 
+
 import streamlit as st
 import pandas as pd
 import altair as alt
@@ -15,9 +17,9 @@ st.set_page_config(
 alt.themes.enable("dark")
 
 # load data 
-
-data_reshaped = pd.read_csv('../data/us-population-2010-2019-reshaped.csv')
-
+current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+data_path = os.path.join(current_dir, 'data/us-population-2010-2019-reshaped.csv')
+data_reshaped = pd.read_csv(data_path)
 #Add sidebar 
 with st.sidebar:
     st.title('US Population Dashboard')
